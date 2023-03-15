@@ -20,18 +20,19 @@ setInterval(function() {
     segundos.innerHTML = seg;
 
     if (hr > 06 && hr <=12) {
-      saudacao.innerHTML =  "Bom Dia!"
-      document.body.style.backgroundImage = "url(../img/manha.jpg)"
-      document.body.style.backgroundSize = "cover"
-
+        saudacao.innerHTML =  "Bom Dia!"
+        document.body.style.backgroundImage = "url(./img/manha.jpg)"
+        document.body.style.backgroundSize = "cover"
     }else if (hr >12 && hr <=18) {
         saudacao.innerHTML = "Boa Tarde!"
-        document.body.style.backgroundImage = "url(../img/tarde.jpg)"
+        document.body.style.backgroundImage = "url(./img/tarde.jpg)"
         document.body.style.backgroundSize = "cover"
+        saudacao.style.color = "white"
     }else {
         saudacao.innerHTML = "Boa Noite!"
-        document.body.style.backgroundImage = "url(../img/noite.jpg)"
+        document.body.style.backgroundImage = "url(./img/noite.jpg)"
         document.body.style.backgroundSize = "cover"
+        saudacao.style.color = "white"
     }
 })
 
